@@ -1,0 +1,17 @@
+:root {
+  --color-primary: #2e1f0e;
+  --color-accent: #c4853a;
+  --color-accent-hover: #a86d28;
+  --color-bg: #faf6ee;
+  --color-surface: #f0e8d5;
+  --color-dark-surface: #2e1f0e;
+  --color-text: #2e1f0e;
+  --color-text-muted: #8a7055;
+  --color-text-on-dark: #f5ecd8;
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Lato', sans-serif;
+  --radius: 4px;
+  --radius-lg: 8px;
+  --transition: 0.3s ease;
+  --container: 1100px;
+}
