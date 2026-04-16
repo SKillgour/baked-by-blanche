@@ -4,16 +4,16 @@ import BBScrollAnimations from "@/components/BBScrollAnimations";
 
 const values = [
   {
-    title: "Real Ingredients",
-    body: "Flour, water, salt, starter. Nothing else needs to be in there. Bread doesn't need a list of things you can't pronounce.",
+    title: "NZ Wheat, First",
+    body: "Andrew uses New Zealand grown and milled wheat wherever he can. The grain is the starting point. Get that right and everything else follows.",
   },
   {
-    title: "Long Fermentation",
-    body: "Every loaf ferments for at least 16 hours. That's where the flavour comes from: slow, real, unhurried. Worth the wait.",
+    title: "Made Entirely By Hand",
+    body: "No machines, no shortcuts. Every loaf is mixed, shaped, and scored by hand, the way Andrew was trained to do it from the start.",
   },
   {
-    title: "Small Batches",
-    body: "We don't bake hundreds. We bake a careful number and make each one count. Quality over quantity, every time.",
+    title: "Slow Fermentation",
+    body: "Real sourdough cannot be rushed. Every loaf ferments properly, for as long as it needs. That's where the flavour, the texture, and the nutrition come from.",
   },
 ];
 
@@ -35,26 +35,45 @@ export default function AboutPage() {
           <span className="bb-label">Hawera, South Taranaki</span>
           <div className="bb-divider" />
           <h1 className="bb-heading-xl bb-about-hero-heading">
-            <em>Blanche's Story</em>
+            <em>How it Started</em>
           </h1>
         </div>
       </section>
 
       {/* Story section */}
       <section className="bb-section bb-about-story-section">
-        <div className="container bb-about-story-inner">
+        <div className="container bb-about-story-grid">
           <div className="bb-about-story-text bb-reveal">
-            <span className="bb-label">The bakery</span>
+            <span className="bb-label">The baker</span>
             <div className="bb-divider" />
             <h2 className="bb-heading-lg bb-about-story-heading">
-              Bread the way it used to taste.
+              Andrew Blanche trained as a baker straight out of school.
             </h2>
             <p className="bb-body-lg bb-about-para">
-              Baked By Blanche began with a simple conviction: that bread should actually taste like something. Not the cotton-soft, shelf-stable kind. Real bread. Bread with crust and crumb and character, made the way it was before additives and industrial shortcuts took over. Blanche bakes in small batches from Hawera using a live sourdough culture, quality flour, water, and salt. That's it.
+              Life took him in other directions after that. Fifteen years working in Wellington's hospitality industry, then another fifteen as a funeral director in Auckland and Hawera. Thirty years in other people's worlds. But the craft stayed with him.
             </p>
             <p className="bb-body-lg bb-about-para">
-              What makes the difference is time. Every loaf ferments slowly, developing flavour that you simply cannot rush or fake. No improvers, no shortcuts, no compromise. Each bake is a small, careful production, and that's exactly how Blanche intends to keep it. When you pick up a loaf, you're getting something made with genuine attention.
+              The return to baking came from his wife Jo. She handed him a sourdough starter and a stack of baking books, and Baked By Blanche grew from there. Jo is the creative force behind what they do. Their son Silas keeps them honest.
             </p>
+            <p className="bb-body-lg bb-about-para">
+              The philosophy is direct: New Zealand grown and milled wheat, everything made by hand, and fermentation that's given the time it actually needs. No improvers, no shortcuts. Andrew calls it restoring the faith in wheat.
+            </p>
+          </div>
+
+          <div className="bb-about-market-card bb-reveal">
+            <span className="bb-label bb-label-accent">Find us</span>
+            <div className="bb-divider" />
+            <h3 className="bb-about-market-heading">Taranaki Farmers' Market</h3>
+            <p className="bb-about-market-detail">
+              Huatoki Plaza, New Plymouth
+            </p>
+            <p className="bb-about-market-day">Sundays, 9am to 12pm</p>
+            <a
+              href="mailto:bakedbyblancheltd@gmail.com"
+              className="bb-about-email"
+            >
+              bakedbyblancheltd@gmail.com
+            </a>
           </div>
         </div>
       </section>
@@ -83,11 +102,11 @@ export default function AboutPage() {
       {/* Full-width photo */}
       <div className="bb-about-fullbleed">
         <Image
-          src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=900&q=80"
+          src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1600&q=80"
           alt="Fresh artisan rolls cooling on a rack"
-          width={900}
-          height={500}
+          fill
           className="bb-about-fullbleed-img"
+          sizes="100vw"
         />
       </div>
 
@@ -97,9 +116,9 @@ export default function AboutPage() {
           <div className="bb-about-cta-text">
             <span className="bb-label">Stay connected</span>
             <div className="bb-divider" />
-            <h2 className="bb-heading-lg">Follow the Journey</h2>
+            <h2 className="bb-heading-lg">Follow the Weekly Bake</h2>
             <p className="bb-body-lg bb-about-cta-body">
-              Blanche shares the weekly bake list, behind-the-scenes moments, and seasonal specials on Facebook. It's the best way to stay in the loop.
+              Andrew posts the weekly bake list on Facebook, usually Monday or Tuesday. That's the best place to see what's available before you order.
             </p>
           </div>
           <div className="bb-about-cta-buttons">
@@ -112,7 +131,7 @@ export default function AboutPage() {
               Follow on Facebook
             </a>
             <Link href="/order" className="bb-btn-ghost-dark">
-              Order Now
+              How to Order
             </Link>
           </div>
         </div>
@@ -133,10 +152,6 @@ export default function AboutPage() {
           background-color: var(--color-primary);
         }
         .bb-about-hero-img {
-          position: absolute;
-          inset: 0;
-          width: 100%;
-          height: 100%;
           object-fit: cover;
           object-position: center 30%;
         }
@@ -170,8 +185,11 @@ export default function AboutPage() {
         .bb-about-story-section {
           background-color: var(--color-bg);
         }
-        .bb-about-story-inner {
-          max-width: 760px;
+        .bb-about-story-grid {
+          display: grid;
+          grid-template-columns: 1fr 340px;
+          gap: 5rem;
+          align-items: start;
         }
         .bb-about-story-text .bb-label {
           display: block;
@@ -188,6 +206,59 @@ export default function AboutPage() {
         }
         .bb-about-para:last-child {
           margin-bottom: 0;
+        }
+
+        /* Market card */
+        .bb-about-market-card {
+          background-color: var(--color-surface);
+          border-radius: var(--radius-lg);
+          padding: 2.5rem;
+          border-top: 3px solid var(--color-accent);
+          position: sticky;
+          top: 100px;
+        }
+        .bb-label-accent {
+          color: var(--color-accent);
+        }
+        .bb-about-market-card .bb-divider {
+          margin: 1rem 0 1.5rem;
+        }
+        .bb-about-market-heading {
+          font-family: var(--font-heading);
+          font-size: 1.5rem;
+          font-weight: 400;
+          color: var(--color-text);
+          line-height: 1.2;
+          margin-bottom: 0.75rem;
+        }
+        .bb-about-market-detail {
+          font-family: var(--font-body);
+          font-size: 0.95rem;
+          font-weight: 400;
+          color: var(--color-text-muted);
+          line-height: 1.6;
+          margin-bottom: 0.25rem;
+        }
+        .bb-about-market-day {
+          font-family: var(--font-body);
+          font-size: 1rem;
+          font-weight: 700;
+          color: var(--color-text);
+          margin-bottom: 1.5rem;
+        }
+        .bb-about-email {
+          font-family: var(--font-body);
+          font-size: 0.85rem;
+          font-weight: 400;
+          color: var(--color-accent);
+          text-decoration: none;
+          border-bottom: 1px solid currentColor;
+          padding-bottom: 1px;
+          transition: color var(--transition);
+          word-break: break-all;
+        }
+        .bb-about-email:hover {
+          color: var(--color-accent-hover);
         }
 
         /* Values */
@@ -250,8 +321,6 @@ export default function AboutPage() {
           position: relative;
         }
         .bb-about-fullbleed-img {
-          width: 100%;
-          height: 100%;
           object-fit: cover;
           object-position: center;
         }
@@ -308,7 +377,14 @@ export default function AboutPage() {
         }
 
         /* Responsive */
-        @media (max-width: 900px) {
+        @media (max-width: 960px) {
+          .bb-about-story-grid {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+          }
+          .bb-about-market-card {
+            position: static;
+          }
           .bb-values-grid {
             grid-template-columns: 1fr;
             gap: 2rem;

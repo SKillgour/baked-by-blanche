@@ -27,9 +27,9 @@ export default function HomePage() {
                 <Image
                   src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=700&q=80"
                   alt="Sourdough loaf with open crumb"
-                  width={700}
-                  height={480}
+                  fill
                   className="bb-bread-card-img"
+                  sizes="(max-width: 580px) 100vw, (max-width: 900px) 50vw, 33vw"
                 />
               </div>
               <div className="bb-bread-card-body">
@@ -49,9 +49,9 @@ export default function HomePage() {
                 <Image
                   src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=700&q=80"
                   alt="Artisan rolls fresh from the oven"
-                  width={700}
-                  height={480}
+                  fill
                   className="bb-bread-card-img"
+                  sizes="(max-width: 580px) 100vw, (max-width: 900px) 50vw, 33vw"
                 />
               </div>
               <div className="bb-bread-card-body">
@@ -71,9 +71,9 @@ export default function HomePage() {
                 <Image
                   src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=700&q=80"
                   alt="Cinnamon scrolls and sweet bakes"
-                  width={700}
-                  height={480}
+                  fill
                   className="bb-bread-card-img"
+                  sizes="(max-width: 580px) 100vw, (max-width: 900px) 50vw, 33vw"
                 />
               </div>
               <div className="bb-bread-card-body">
@@ -98,9 +98,9 @@ export default function HomePage() {
               <Image
                 src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=800&q=80"
                 alt="Hands shaping bread dough on a floured surface"
-                width={800}
-                height={900}
+                fill
                 className="bb-story-img"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -112,7 +112,7 @@ export default function HomePage() {
               <em>The way it used to be.</em>
             </h2>
             <p className="bb-body-lg bb-story-para">
-              Baked By Blanche started from a simple belief -- that bread should taste like something. Real sourdough takes time, care, and a starter that's been fed and tended for years. Blanche bakes in small batches from Hawera, South Taranaki, using nothing but flour, water, salt, and a live culture.
+              Baked By Blanche started from a simple belief: that bread should taste like something. Real sourdough takes time, care, and a starter that's been fed and tended for years. Andrew bakes in small batches using nothing but New Zealand flour, water, salt, and a live culture.
             </p>
             <p className="bb-body-lg bb-story-para">
               No shortcuts. No additives. Just long, slow fermentation the way bread used to be made. Every loaf is shaped by hand and baked to order, which means what you get is genuinely fresh and genuinely different from anything on a supermarket shelf.
@@ -132,7 +132,7 @@ export default function HomePage() {
             <div className="bb-divider" />
             <h2 className="bb-heading-lg bb-heading-on-dark">How to Order</h2>
             <p className="bb-body-lg bb-body-on-dark">
-              We bake to order -- everything is made fresh for you.
+              We bake to order. Everything is made fresh for you.
             </p>
           </div>
 

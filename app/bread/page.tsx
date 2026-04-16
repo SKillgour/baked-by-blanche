@@ -72,9 +72,9 @@ export default function BreadPage() {
                   <Image
                     src={bread.image}
                     alt={bread.alt}
-                    width={600}
-                    height={420}
+                    fill
                     className="bb-catalogue-img"
+                    sizes="(max-width: 680px) 100vw, 50vw"
                   />
                 </div>
                 <div className="bb-catalogue-card-body">
