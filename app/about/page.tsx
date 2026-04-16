@@ -23,8 +23,8 @@ export default function AboutPage() {
       {/* Full-bleed hero */}
       <section className="bb-about-hero">
         <Image
-          src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=1600&q=80"
-          alt="Hands shaping bread dough on a floured bench"
+          src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?w=1600&q=80"
+          alt="Hands kneading bread dough on a floured bench"
           fill
           priority
           className="bb-about-hero-img"
@@ -102,8 +102,8 @@ export default function AboutPage() {
       {/* Full-width photo */}
       <div className="bb-about-fullbleed">
         <Image
-          src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1600&q=80"
-          alt="Fresh artisan rolls cooling on a rack"
+          src="https://images.unsplash.com/photo-1732565729552-994c6af761e3?w=1600&q=80"
+          alt="Artisan sourdough loaves cooling on bakery racks"
           fill
           className="bb-about-fullbleed-img"
           sizes="100vw"

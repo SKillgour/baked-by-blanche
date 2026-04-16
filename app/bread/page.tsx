@@ -7,8 +7,8 @@ const breads = [
     name: "Sourdough White Loaf",
     description: "Classic open crumb, dark caramelised crust. Long cold ferment.",
     price: "$12",
-    image: "https://images.unsplash.com/photo-1603199939576-8bee43b4232a?w=600&q=80",
-    alt: "Homemade sourdough white loaf with caramelised crust",
+    image: "https://images.unsplash.com/photo-1765227036124-f90781f04dd8?w=600&q=80",
+    alt: "Rustic sourdough white loaf on a wooden board",
   },
   {
     name: "Sourdough Wholegrain",
@@ -35,15 +35,15 @@ const breads = [
     name: "Sourdough Rolls",
     description: "Soft crust, perfect for burgers or sides. 6 pack.",
     price: "$10",
-    image: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80",
-    alt: "Sourdough bread rolls on baking paper",
+    image: "https://images.unsplash.com/photo-1549407981-2e656af56b4b?w=600&q=80",
+    alt: "Freshly baked sourdough rolls in a wooden tray",
   },
   {
     name: "Cinnamon Scrolls",
     description: "Buttery, sweet, proper scrolls. Not the supermarket kind. 4 pack.",
     price: "$12",
-    image: "https://images.unsplash.com/photo-1457494798428-b6b70915727?w=600&q=80",
-    alt: "Freshly baked cinnamon scrolls on a baking tray",
+    image: "https://images.unsplash.com/photo-1694632288834-17d86b340745?w=600&q=80",
+    alt: "Cinnamon scrolls with icing on a baking tray",
   },
 ];
 

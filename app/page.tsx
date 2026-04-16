@@ -69,8 +69,8 @@ export default function HomePage() {
             <div className="bb-bread-card bb-stagger-item">
               <div className="bb-bread-card-img-wrap">
                 <Image
-                  src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=700&q=80"
-                  alt="Cinnamon scrolls and sweet bakes"
+                  src="https://images.unsplash.com/photo-1694632288834-17d86b340745?w=700&q=80"
+                  alt="Cinnamon scrolls with icing on a baking tray"
                   fill
                   className="bb-bread-card-img"
                   sizes="(max-width: 580px) 100vw, (max-width: 900px) 50vw, 33vw"
@@ -96,8 +96,8 @@ export default function HomePage() {
           <div className="bb-story-img-col bb-slide-left">
             <div className="bb-story-img-wrap">
               <Image
-                src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=800&q=80"
-                alt="Hands shaping bread dough on a floured surface"
+                src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?w=800&q=80"
+                alt="Hands kneading bread dough on a floured bench"
                 fill
                 className="bb-story-img"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -280,7 +280,10 @@ export default function HomePage() {
           margin-bottom: 2rem;
         }
 
-        /* How to Order (dark) */
+        /* How to Order (dark) — distinct from footer */
+        .bb-how-to-order {
+          background-color: #52360f;
+        }
         .bb-how-to-order .bb-section-header .bb-label,
         .bb-label-on-dark {
           color: var(--color-accent);

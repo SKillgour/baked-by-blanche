@@ -44,9 +44,9 @@ export default function BBFooter() {
           <p className="bb-footer-copy">
             &copy; {new Date().getFullYear()} Baked By Blanche. Hawera, South Taranaki, New Zealand.
           </p>
+          <p className="footer-credit">Website by <a href="https://insightly.nz" target="_blank" rel="noopener noreferrer">Insightly</a></p>
         </div>
       </div>
-      <p className="footer-credit">Website by <a href="https://insightly.nz" target="_blank" rel="noopener noreferrer">Insightly</a></p>
 
       <style>{`
         .bb-footer {
@@ -109,6 +109,7 @@ export default function BBFooter() {
           display: flex;
           justify-content: space-between;
           align-items: center;
+          gap: 1rem;
         }
         .bb-footer-copy {
           font-family: var(--font-body);
@@ -130,9 +131,9 @@ export default function BBFooter() {
             grid-template-columns: 1fr;
           }
         }
-        .footer-credit { text-align: center; font-size: 0.68rem; opacity: 0.35; margin-top: 1.5rem; padding-bottom: 0.75rem; letter-spacing: 0.02em; }
+        .footer-credit { font-family: var(--font-body); font-size: 0.8rem; font-weight: 300; color: rgba(245, 236, 216, 0.35); flex-shrink: 0; }
         .footer-credit a { color: inherit; text-decoration: none; }
-        .footer-credit a:hover { opacity: 0.7; }
+        .footer-credit a:hover { color: rgba(245, 236, 216, 0.7); }
       `}</style>
     </footer>
   );

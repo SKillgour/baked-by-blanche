@@ -3,6 +3,7 @@ import "./globals.css";
 import BBHeader from "@/components/BBHeader";
 import BBFooter from "@/components/BBFooter";
 import BBScrollAnimations from "@/components/BBScrollAnimations";
+import BBIntro from "@/components/BBIntro";
 
 export const metadata: Metadata = {
   title: "Baked By Blanche | Real Bread. Made by Hand.",
@@ -33,6 +34,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <BBIntro />
         <BBHeader />
         <main>{children}</main>
         <BBFooter />
